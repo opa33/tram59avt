@@ -123,7 +123,7 @@ box-shadow: 0 0 0.8854vh rgba(0,0,0,0.2);
   width: 46.3vw; 
   color: white;
   font-family: roboto; 
-  font-size: calc(1vw + 2vh); 
+  font-size: calc(1vw + 1.7vh); 
   font-weight: 600;
   background-color: rgb(34,34,34)
   }
@@ -235,7 +235,7 @@ Width: 87vw;
 height: calc(11vh + 48vw);
 position: relative;
 margin: 1.3vh auto 1.3vh auto;
-outline: dotted 0.7vw rgb(113,113,113);
+outline: dotted 0.5vw rgb(113,113,113);
 padding: 0.5vh 0 0.5vh 0;
 }
   n {
@@ -251,7 +251,7 @@ padding: 0.5vh 0 0.5vh 0;
   }
   
   bilet {
-    font-size: calc(2vw + 1.5vh);
+    font-size: calc(2vw + 1.2vh);
     font-family: roboto;
     color: white;
       
@@ -316,7 +316,7 @@ justify-content: space-between;
 .bottom_x{
 background-color:rgb(18,18,18);
 Width: 100vw;
-height: 6.78vh;
+height: 7.78vh;
 position: absolute;
 bottom: 0%;	
 left: 0%;
