@@ -884,6 +884,7 @@ align-items: center;
 justify-content: center;
 color: white;
 font-size: 20px;
+border-color: rgb(0,84,190);
 }
 
 .num_QR_inp {
