@@ -9,6 +9,7 @@ background-attachment:fixed;
 font-family: roboto;
 background-size: 300%;
 background-color: rgb(18,18,18);
+overflow-x: hidden;
 }
 
 
