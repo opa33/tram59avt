@@ -123,11 +123,11 @@ box-shadow: 0 0 0.8854vh rgba(0,0,0,0.2);
   .inp_ust {
   border: solid 1px rgb(34,34,34); 
   text-align: center; 
-  width: 46.3vw; 
+  width: 50.3vw; 
   color: white;
   font-family: roboto; 
   font-size: calc(1vw + 2vh); 
-  font-weight: 600;
+  font-weight: 800;
   background-color: rgb(34,34,34)
   }
 .time_pos {
