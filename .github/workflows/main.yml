@@ -19,7 +19,7 @@ jobs:
         php-version: '7.4' # замените на вашу версию PHP
 
     - name: Execute PHP script
-      run: php savedata.php
+      run: php tram59avt/savedata.php
 
     - name: Commit and push changes
       run: |
