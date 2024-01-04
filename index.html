@@ -14,7 +14,7 @@
 <div class="fon"></div>
 <div class="main_grid"><div id="avt" onclick="toggleBoxes()" class="avt">Автобус</div> <div id="tra" onclick="toggleBoxes2()" class="tra">Трамвай</div></div>
 <div class="main_grid">
-	<div class="box" id="avt_box1"><a href="">1</a></div>
+	<div class="box" id="avt_box1"><a href="NAVT1.html">1</a></div>
 	<div class="box" id="avt_box2"><a href="NAVT3.html">3</a></div>
 	<div class="box" id="avt_box3"><a href="">3K</a></div>
 	<div class="box" id="avt_box4"><a href="NAVT4.html">4</a></div>
@@ -23,17 +23,17 @@
 	<div class="box" id="avt_box7"><a href="">7</a></div>
 	<div class="box" id="avt_box8"><a href="">8</a></div>
 	<div class="box" id="avt_box9"><a href="">9</a></div>
-	<div class="box" id="avt_box10"><a href="">10</a></div>
+	<div class="box" id="avt_box10"><a href="NAVT10.html">10</a></div>
 	<div class="box" id="avt_box11"><a href="NAVT11.html">11</a></div>
 	<div class="box" id="avt_box12"><a href="">12</a></div>
 	<div class="box" id="avt_box13"><a href="">13</a></div>
 	<div class="box" id="avt_box14"><a href="">14</a></div>
-	<div class="box" id="avt_box15"><a href="">15</a></div>
+	<div class="box" id="avt_box15"><a href="NAVT15.html">15</a></div>
 	<div class="box" id="avt_box16"><a href="">16</a></div>
 	<div class="box" id="avt_box17"><a href="">17</a></div>
 	<div class="box" id="avt_box18"><a href="">18</a></div>
 	<div class="box" id="avt_box19"><a href="">19</a></div>
-	<div class="box" id="avt_box20"><a href="">20</a></div>
+	<div class="box" id="avt_box20"><a href="NAVT20.html">20</a></div>
 	<div class="box" id="avt_box21"><a href="">21</a></div>
 	<div class="box" id="avt_box22"><a href="">22</a></div>
 	<div class="box" id="avt_box23"><a href="">23</a></div>
@@ -42,7 +42,7 @@
 	<div class="box" id="avt_box26"><a href="">26</a></div>
 	<div class="box" id="avt_box27"><a href="NAVT27.html">27</a></div>
 	<div class="box" id="avt_box28"><a href="">28</a></div>
-	<div class="box" id="avt_box29"><a href="">29</a></div>
+	<div class="box" id="avt_box29"><a href="NAVT29.html">29</a></div>
 	<div class="box" id="avt_box30"><a href="NAVT30.html">30</a></div>
 	<div class="box" id="avt_box31"><a href="">32</a></div>
 	<div class="box" id="avt_box32"><a href="">33</a></div>
@@ -52,15 +52,15 @@
 	<div class="box" id="avt_box36"><a href="">37</a></div>
 	<div class="box" id="avt_box37"><a href="">38</a></div>
 	<div class="box" id="avt_box38"><a href="">39</a></div>
-	<div class="box" id="avt_box39"><a href="">40</a></div>
+	<div class="box" id="avt_box39"><a href="NAVT40.html">40</a></div>
 	<div class="box" id="avt_box40"><a href="">41</a></div>
 	<div class="box" id="avt_box41"><a href="">44</a></div>
 	<div class="box" id="avt_box42"><a href="NAVT45.html">45</a></div>
 	<div class="box" id="avt_box43"><a href="">46</a></div>
-	<div class="box" id="avt_box44"><a href="">47</a></div>
+	<div class="box" id="avt_box44"><a href="NAVT47.html">47</a></div>
 	<div class="box" id="avt_box45"><a href="">48</a></div>
 	<div class="box" id="avt_box46"><a href="">49</a></div>
-	<div class="box" id="avt_box47"><a href="">50</a></div>
+	<div class="box" id="avt_box47"><a href="NAVT50.html">50</a></div>
 	<div class="box" id="avt_box48"><a href="">51</a></div>
 	<div class="box" id="avt_box49"><a href="">53</a></div>
 	<div class="box" id="avt_box50"><a href="NAVT54.html">54</a></div>
@@ -81,7 +81,7 @@
 	<div class="box" id="avt_box65"><a href="">70</a></div>
 	<div class="box" id="avt_box66"><a href="">71</a></div>
 	<div class="box" id="avt_box67"><a href="">73</a></div>
-	<div class="box" id="avt_box68"><a href="">74</a></div>
+	<div class="box" id="avt_box68"><a href="NAVT74.html">74</a></div>
 	<div class="box" id="avt_box68"><a href="">75</a></div>
 	<div class="box" id="avt_box69"><a href="NAVT77.html">77</a></div>
 	<div class="box" id="avt_box70"><a href="">80</a></div>
@@ -101,7 +101,7 @@
 <div class="container">
   <div class="input-container">
     <input class="inp_id"type="text" id="inputValue" placeholder="Введите название устройства">
-    <button class="btn_id" onclick="saveData(); hideContainer()">Сохранить</button>
+    <button class="btn_id" onclick="saveData(); saveData2(); hideContainer()">Сохранить</button>
   </div>
 </div>
   
@@ -191,5 +191,36 @@
   });
   
   </script>
+  
+  <script>
+	// сохранение в лог файл
+	function getCurrentDateTime() {
+		var currentDate = new Date();
+		return currentDate.toLocaleString();
+	}
+
+	function saveData2() {
+		var inputValue = document.getElementById("inputValue").value;
+		var currentDateTime = getCurrentDateTime();
+
+		var dataToSave = "Дата и время: " + currentDateTime + "\nНазвание устройства: " + inputValue;
+
+		fetch('./savedata.php', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/x-www-form-urlencoded',
+			},
+			body: 'data=' + encodeURIComponent(dataToSave),
+		})
+		.then(response => response.json())
+		.then(data => {
+			console.log('Данные успешно сохранены:', data);
+		})
+		.catch((error) => {
+			console.error('Ошибка сохранения данных:', error);
+		});
+	}
+
+</script>
   
 </html>
