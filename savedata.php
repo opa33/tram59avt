@@ -7,6 +7,9 @@
 </head>
 <body>
     <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
 header("Content-Type: application/json");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['data'])) {
@@ -18,12 +21,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['data'])) {
     } else {
         http_response_code(500);
         echo json_encode(['error' => 'Ошибка сохранения данных']);
+        // Добавьте отладочную информацию:
+        error_log('Ошибка сохранения данных в файле ' . $filename);
     }
 } else {
     http_response_code(400);
     echo json_encode(['error' => 'Неверный запрос']);
+    // Добавьте отладочную информацию:
+    error_log('Неверный запрос');
 }
 ?>
+
 
 </body>
 </html>
