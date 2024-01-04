@@ -23,8 +23,9 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --local user.email "action@github.com"
+        git config --local user.email ""
         git config --local user.name "GitHub Action"
         git add data.txt
         git commit -m "Update data [skip ci]"
         git push
+        
