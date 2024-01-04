@@ -19,11 +19,14 @@ jobs:
         php-version: '7.4' # замените на вашу версию PHP
 
     - name: Execute PHP script
-      run: php tram59avt/savedata.php
+      run: |
+        cd tram59avt
+        php savedata.php
 
     - name: Commit and push changes
       run: |
-        git config --local user.email "action@github.com"
+        cd tram59avt
+        git config --local user.email ""
         git config --local user.name "GitHub Action"
         git add data.txt
         git commit -m "Update data [skip ci]"
