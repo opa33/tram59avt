@@ -3,7 +3,7 @@ name: main
 on:
   push:
     branches:
-      - main # замените на вашу основную ветку
+      - main
 
 jobs:
   execute-php:
@@ -16,17 +16,14 @@ jobs:
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '7.4' # замените на вашу версию PHP
+        php-version: '7.4'
 
     - name: Execute PHP script
-      run: |
-        cd tram59avt
-        php savedata.php
+      run: php savedata.php
 
     - name: Commit and push changes
       run: |
-        cd tram59avt
-        git config --local user.email ""
+        git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data.txt
         git commit -m "Update data [skip ci]"
