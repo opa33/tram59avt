@@ -523,7 +523,7 @@ for (var i = 0; i < numDivs; i++) {
   randomDate.textContent = getRandomDate();
 
   var greenn = document.createElement('greenn');
-  greenn.textContent = '35 руб';
+  greenn.textContent = '37 руб';
 
   div.appendChild(greenbusBox);
   div.appendChild(randomDate);
@@ -561,7 +561,7 @@ marshrut_duble.textContent = marshrut.textContent;
 
       var oplataElement = document.getElementById("oplata");
     var bagsValue = parseInt(document.getElementById("bags").innerText);
-    var result = (passenValue + bagsValue) * 35;
+    var result = (passenValue + bagsValue) * 37;
     var greenspan = document.getElementById("greenpass");
     oplataElement.textContent = result;
     greenspan.textContent = result;
