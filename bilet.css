@@ -98,7 +98,7 @@ mar {
 }
 kal {
   font-family: roboto;
-  font-weight: 600;
+  font-weight: 900;
   font-size: calc(3.5vw + 1.2vh);
   color: white;
 }
@@ -117,7 +117,7 @@ pixel {
   font-family: roboto;
   color: white;
   font-size: calc(3.5vw + 1.3vh);
-  font-weight: 600;
+  font-weight: 900;
   height: 3.6458vh;
   max-width: 45vw;
   text-transform: uppercase;
@@ -131,13 +131,13 @@ pixel {
   color: white;
   font-family: roboto;
   font-size: calc(1vw + 1.7vh);
-  font-weight: 800;
+  font-weight: 900;
   background-color: rgb(34, 34, 34);
 }
 .time_pos {
   text-align: center;
   font-family: roboto;
-  font-weight: 600;
+  font-weight: 900;
   background-color: rgb(34, 34, 34);
   width: 87vw;
   height: 13.84vh;
@@ -150,8 +150,12 @@ pixel {
   height: 0.5vh;
   width: 2vw;
 }
+.blut {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
 t {
-  font-size: calc(1.5vw + 1.5vh);
+  font-size: calc(1.5vw + 1.2vh);
   color: white;
 }
 x {
@@ -620,9 +624,9 @@ add_text {
 
 .button {
   font-family: roboto;
-  background-color: rgb(0, 84, 190);
+  background-color: rgb(0, 82, 190);
   width: 87vw;
-  height: 6.2vh;
+  height: 5.7vh;
   border-radius: 2vw;
   margin: 0.8854vh auto;
   box-shadow: 0 0 0.8854vh rgba(0, 0, 0, 0.2);
