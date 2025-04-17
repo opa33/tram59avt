@@ -532,7 +532,7 @@ historyleft.addEventListener("click", () => {
     randomDate.textContent = getRandomDate();
 
     var greenn = document.createElement("greenn");
-    greenn.textContent = "37 ₽";
+    greenn.textContent = "40 ₽";
 
     div.appendChild(greenbusBox);
     div.appendChild(randomDate);
@@ -572,7 +572,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var oplataElement = document.getElementById("oplata");
     var bagsValue = parseInt(document.getElementById("bags").innerText);
-    var result = (passenValue + bagsValue) * 37;
+    var result = (passenValue + bagsValue) * 40;
     var greenspan = document.getElementById("greenpass");
     oplataElement.textContent = result;
     greenspan.textContent = result;
